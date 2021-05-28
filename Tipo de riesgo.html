@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+  <meta charset="utf-8">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../../../css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/boton.css">
+	<script type="text/javascript" src="../../../js/jquery.min.js" language="javascript"></script>
+	<script type="text/javascript" src="../../../js/navbar.js" language="javascript"></script>
+</head>
+<body>
+	<nav>
+        <ul class="text-light text-white">
+		 <ul class="menu" >
+		    <li class="logo"><a class="btnNav" href="/index.html">tabasco<b>.</b>gob.mx</a></li>
+		    <li class="item"><a class="btnNav"  href="#">Transparencia</a></li>
+		    <li class="item"><a class="btnNav" href="#">Gobierno</a></li>
+		    <li class="item"><a class="btnNav" href="#">Noticias</a></li>
+		    <li class="item"><a class="btnNav" href="#">Tramites</a></li>
+
+		  
+		    <li class="item button"><a href="#">Barra de busqueda</a></li>
+		    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+		 </ul>
+        </ul>
+        
+	</nav>
+	<br>
+<i>
+   <a class="boton_personalizado2" href="/Tramites/tramites.html">Regresar</a></i>
+
+	
+	<div class="container mt-4">
+        <h1>Tipo de Riesgo que afectan a la poblacion</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <form method="POST" action="reg.php">
+                   <div class="form-group">
+                   <div class="form-group">
+                    <label for="nombre">TIPO DE CURSO</label>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Curso en Linea
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Curso presencial
+                          </label>
+                        </div>
+                       </div>
+                    <label for="nombre">Nombre del solicitante</label>
+                    <input  class="form-control"
+                            type="text"
+                            id="Nombre"
+                            name="Nombre" 
+                            placeholder="Nombre del Solicitante"
+                            required>
+    
+                        <div class="form-group">
+                    <label for="nombre">Apellido paterno del solicitante</label>
+                    <input  class="form-control"
+                            type="text"
+                            id="ApellidoP"
+                            name="apellidoP" 
+                            placeholder="Apellido paterno"
+                            required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Apellido materno del solicitante</label>
+                    <input  class="form-control"
+                            type="text"
+                            id="ApellidoM"
+                            name="apellidoM" 
+                            placeholder="Apellido materno"
+                            required>
+                </div>
+                </div>
+                   <div class="form-group">
+                    <label for="nombre">Número de personas que asistiran a la capacitación</label>
+                    <input  class="form-control" type="number" name="nuemroPer" value="1" id="example-number-input"
+                            required>
+                </div>
+               
+                
+
+                    
+                    <div class="form-group col-md-6">
+                        <label for="telefono">Numero de Teléfono para su localización </label>
+                        <input  class="form-control"
+                                type="tel"
+                                id="telefono"
+                                name="telefono" 
+                                placeholder="993-224-5543"
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                required>
+                    </div>
+                    <div class="form-group" >
+                    <a class="btn btn-primary btn-block" type="submit" href="/Tramites/verificacion.html">CONTINUAR</a>
+                    <td><label><input type="submit" value="Registrarme"></input></label></td>
+                </div>
+                </div>
+
+
+                
+
+                
+                
+
+               
+                
+            
+             </form>
+                
+                
+           
+        </div>
+    </div>
+
+
+    <!-- Etiquetas script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
